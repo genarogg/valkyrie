@@ -12,7 +12,7 @@ module.exports = {
     title: `Valkyrie`,
     description: `Plantilla para crear portafolios`,
     author: `@genarogg`,
-    siteUrl: `localhost | recuerda que no hay menjor lugar como el hogar`,
+    siteUrl: `http://localhost`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -29,11 +29,11 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `Valkyrie`,
         start_url: `/`,
         background_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/img/favicon.png`, // This path is relative to the root of the site.
       },
     },
   ],
