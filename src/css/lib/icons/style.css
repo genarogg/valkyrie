@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kimo6v');
+  src:  url('fonts/icomoon.eot?kimo6v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kimo6v') format('truetype'),
+    url('fonts/icomoon.woff?kimo6v') format('woff'),
+    url('fonts/icomoon.svg?kimo6v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telegram:before {
+  content: "\e917";
+  color: #2ca5e0;
+}
+.icon-link:before {
+  content: "\e913";
+}
+.icon-anchor:before {
+  content: "\e913";
+}
+.icon-chain:before {
+  content: "\e913";
+}
+.icon-suitcase:before {
+  content: "\e906";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e910";
+}
+.icon-calendar:before {
+  content: "\e914";
+}
+.icon-light-bulb:before {
+  content: "\e915";
+}
+.icon-triangle-right:before {
+  content: "\e907";
+}
+.icon-thunder-cloud:before {
+  content: "\e908";
+}
+.icon-cross:before {
+  content: "\e909";
+}
+.icon-magnifying-glass:before {
+  content: "\e90a";
+}
+.icon-menu:before {
+  content: "\e90b";
+}
+.icon-flash:before {
+  content: "\e90c";
+}
+.icon-feather:before {
+  content: "\e90d";
+}
+.icon-home:before {
+  content: "\e90e";
+}
+.icon-user:before {
+  content: "\e916";
+}
+.icon-profile:before {
+  content: "\e916";
+}
+.icon-avatar:before {
+  content: "\e916";
+}
+.icon-person:before {
+  content: "\e916";
+}
+.icon-member:before {
+  content: "\e916";
+}
+.icon-circle-full:before {
+  content: "\e90f";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-envelop:before {
+  content: "\e901";
+}
+.icon-whatsapp:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-linkedin:before {
+  content: "\e904";
+}
+.icon-github:before {
+  content: "\e905";
+}
+.icon-telegram1:before {
+  content: "\ea95";
+}
+.icon-profile1:before {
+  content: "\e923";
+}
+.icon-external-link-square:before {
+  content: "\e912";
+}
+.icon-external-link:before {
+  content: "\e911";
+}
+.icon-hashtag:before {
+  content: "\e918";
+}

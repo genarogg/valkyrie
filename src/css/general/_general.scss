@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100vw;
+  padding: 0;
+  color: #fff;
+}
+
+html {
+  min-height: 101vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #181818;
+  display: flex;
+  font-family: $font;
+  font-weight: normal;
+  flex-wrap: wrap;
+  min-height: inherit;
+  width: 100%;
+}
+
+div#gatsby-focus-wrapper,
+div#___gatsby,
+.allContainer {
+  display: inherit;
+  flex-wrap: inherit;
+  min-height: inherit;
+  width: inherit;
+}
+
+.ico {
+  color: $colorIconos;
+  font-size: 18px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.gatsby-image-wrapper {
+  height: 100%;
+
+  & > picture img {
+    object-fit: fill !important;
+    filter: saturate(1.1);
+  }
+}
+
+::selection {
+  background: $ggAzul;
+  color: $colorTexto;
+  text-shadow: none;
+}
+
+img::selection {
+  background: rgba($ggAzul, 0.2);
+  color: $colorTexto;
+  text-shadow: none;
+}
+
+a::selection {
+  background: $colorDeSeleccion !important;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $colorDeSeleccion !important;
+  }
+}
+.visited:visited {
+  color: $ggRojo !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $ggAzul;
+}
