@@ -1,5 +1,5 @@
 import * as React from "react"
-
-const NotFoundPage = () => <h1>404: Not Found</h1>
+import Home from "./index"
+const NotFoundPage = () => <Home></Home>
 
 export default NotFoundPage

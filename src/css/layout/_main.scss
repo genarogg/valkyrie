@@ -1,0 +1,14 @@
+main {
+  min-height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  /* activar cuando el header sea fixed */
+  /* .headerGhost {
+      width: 100%;
+      background-color: transparent;
+      height: 100px;
+    } */
+}
