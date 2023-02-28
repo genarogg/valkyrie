@@ -38,7 +38,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
 
     "demo": "cls & gatsby build && gatsby serve",
-    "develop": "gatsby clean && gatsby develop",
+    "develop": "cls && gatsby clean && gatsby develop",
     "deploy": "gatsby build && firebase deploy"
   },
 
