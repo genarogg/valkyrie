@@ -6,9 +6,11 @@ import A from "../components/nano/A"
 interface HomeProps {}
 
 const Home: React.FunctionComponent<HomeProps> = () => {
+  console.log()
   return (
     <Layout>
       <h1>main</h1>
+    
     </Layout>
   )
 }

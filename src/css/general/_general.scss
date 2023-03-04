@@ -19,6 +19,8 @@ body {
   flex-wrap: wrap;
   min-height: inherit;
   width: 100%;
+
+  background-image: url("/static/e4480112f80163ecd505cdcc7129ef33/735eb/textura-background.webp");
 }
 
 div#gatsby-focus-wrapper,
@@ -30,10 +32,10 @@ div#___gatsby,
   width: inherit;
 }
 
-.ico {
+/* .ico {
   color: $colorIconos;
   font-size: 18px;
-}
+} */
 
 button {
   background-color: transparent;

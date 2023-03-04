@@ -1,0 +1,55 @@
+.icono-super-container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  .ico-container {
+    width: 150px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 15px 25px;
+    margin: 15px 25px;
+    display: inline-flex;
+
+    &.vacio{
+      border: none;
+    }
+  }
+
+  .container {
+    max-width: 90vw;
+    min-height: 90vh;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h5.title {
+    margin: 10px;
+  }
+
+  .iconos {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ico-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+        fill: #4db5ff;
+    }
+  }
+
+  
+}

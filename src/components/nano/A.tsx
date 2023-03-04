@@ -30,6 +30,20 @@ const A: React.FunctionComponent<AProps> = ({
       </a>
     )
   }
+
+  if (type === "navegation") {
+    return (
+      <a
+        className={css}
+        href={to}
+        rel="noopener noreferrer nofollow"
+        id={id}
+      >
+        {children}
+      </a>
+    )
+  }
+
   return (
     <Link to={to} id={id} className={css}>
       {children}
