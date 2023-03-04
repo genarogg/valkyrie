@@ -11,7 +11,7 @@ const Qimg = () => {
 
       avatar: file(relativePath: { eq: "avatar.jpg" }) {
         sharp: childImageSharp {
-          gatsbyImageData(formats: WEBP, quality: 80, width: 480)
+          gatsbyImageData(formats: WEBP, quality: 80, width: 600)
         }
       }
     }

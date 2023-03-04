@@ -1,4 +1,26 @@
 main {
+  .btn {
+    border: 1px solid $blue-freya;
+    border-radius: 5px;
+
+    color: $blue-freya;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 25px;
+    transition: all 0.4s ease;
+    transition: $transicion600ms;
+
+    width: max-content;
+    text-decoration: none;
+
+    &.btn-primary,
+    &:hover {
+      background: $blue-freya;
+
+      color: #1f1f38;
+    }
+  }
+
   .presentation {
     display: flex;
 
@@ -6,7 +28,8 @@ main {
     align-items: center;
     height: 100vh;
     justify-content: end;
-    width: 100%;
+    width: 70%;
+
     h5 {
       font-weight: 500;
 
@@ -26,28 +49,6 @@ main {
       gap: 24px;
       justify-content: center;
       margin-top: 36px;
-
-      .btn {
-        border: 1px solid $blue-freya;
-        border-radius: 5px;
-
-        color: $blue-freya;
-        cursor: pointer;
-        display: inline-block;
-        padding: 20px 25px;
-        transition: all 0.4s ease;
-        transition: $transicion600ms;
-
-        width: max-content;
-        text-decoration: none;
-
-        &.btn-primary,
-        &:hover {
-          background: $blue-freya;
-
-          color: #1f1f38;
-        }
-      }
     }
     .picture {
       display: flex;
