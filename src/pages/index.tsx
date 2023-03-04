@@ -1,18 +1,12 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import A from "../components/nano/A"
+import Home  from "../components/viewer"
 
-interface HomeProps {}
+interface IndexProps {}
 
-const Home: React.FunctionComponent<HomeProps> = () => {
+const Index: React.FunctionComponent<IndexProps> = () => {
   console.log()
-  return (
-    <Layout>
-      <h1>main</h1>
-    
-    </Layout>
-  )
+  return <Home />
 }
 
-export default Home
+export default Index

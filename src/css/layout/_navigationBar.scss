@@ -13,6 +13,9 @@ nav.navigation {
   transform: translateX(-50%);
   width: max-content;
   z-index: 2;
+
+  border-radius: 24px 24px 0 0;
+  bottom: 0;
   /*   border: 1px solid; */
 
   * {
@@ -20,7 +23,7 @@ nav.navigation {
   }
 
   ul {
-    width: 350px;
+    width: 360px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,12 +40,21 @@ nav.navigation {
         border-radius: 50%;
         padding-top: 3px;
 
+        svg {
+          transition: 0s ease all;
+        }
+
         &:hover {
           background-color: rgba(#fff, 0.4);
         }
 
         &.active {
           background-color: $blue-freya;
+
+          svg {
+            fill: #000;
+            transition: 0s ease all;
+          }
         }
       }
     }
