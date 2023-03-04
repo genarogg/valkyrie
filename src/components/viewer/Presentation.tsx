@@ -7,7 +7,7 @@ import SvgGithub from "../svg-img/social/SvgGithub"
 import SvgInstagram from "../svg-img/social/SvgInstagram"
 import SvgWhatsapp from "../svg-img/social/SvgWhatsapp"
 import A from "../nano/A"
-import { apiWhatsapp, github, instagram, linkedin } from "./Varibles"
+import { apiWhatsapp, cv, github, instagram, linkedin } from "./Varibles"
 
 interface PresentationProps {}
 
@@ -30,11 +30,7 @@ const Presentation: React.FunctionComponent<PresentationProps> = () => {
         <h5 className="text-light">Fullstack Developer</h5>
 
         <div className="cta">
-          <a
-            href="/static/media/cv.31d6cfe0d16ae931b73c.pdf"
-            download=""
-            className="btn"
-          >
+          <a href={cv} download="" className="btn">
             Download CV
           </a>
           <a href="#contact" className="btn btn-primary">
