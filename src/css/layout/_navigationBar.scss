@@ -1,8 +1,8 @@
 nav.navigation {
   backdrop-filter: blur(5px);
-  background: rgba(#fff, 0.3);
+  background: rgba(#fff, 0.2);
   border-radius: 3rem;
-  bottom: 8rem;
+  bottom: 30px;
 
   display: block;
   gap: 0.8rem;
@@ -13,7 +13,7 @@ nav.navigation {
   transform: translateX(-50%);
   width: max-content;
   z-index: 2;
-  border: 1px solid;
+  /*   border: 1px solid; */
 
   * {
     transition: $transicion600ms;
@@ -39,8 +39,10 @@ nav.navigation {
 
         &:hover {
           background-color: rgba(#fff, 0.4);
+        }
 
-          
+        &.active {
+          background-color: $blue-freya;
         }
       }
     }

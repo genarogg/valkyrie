@@ -7,16 +7,18 @@ import SvgUser from "../svg-img/SvgUser"
 import SvgHeart from "../svg-img/SvgHeart"
 import SvgContact from "../svg-img/SvgContact"
 
+import { $classList } from "../../functions/$"
+
 interface NavigationBarProps {}
 
 const NavigationBar: React.FunctionComponent<NavigationBarProps> = () => {
   const hover = (e: any) => {
     const target = e.target.localName
-    if(target === "ul" || target === "li" || target === "nav"){
-      console.log("llegue hasta aqui!!!")
+
+    if (target === "ul" || target === "li") {
       return
     }
-    console.log("llegue hasta aqui2!!!")
+
     const getA = (node: any) => {
       if (node.localName === "a") {
         return node
@@ -27,13 +29,18 @@ const NavigationBar: React.FunctionComponent<NavigationBarProps> = () => {
 
     const elemento = getA(e.target)
 
-    console.log(elemento.id);
-    
+    /* Eliminar el estilo */
 
- 
+    $classList("btnHome").remove("active")
+    $classList("btnUsuario").remove("active")
+    $classList("btnExperience").remove("active")
+    $classList("btnServices").remove("active")
+    $classList("btnContact").remove("active")
+
+    /* Agg el estilo */
+    $classList(elemento.id).add("active")
   }
 
-  
   return (
     <nav className="navigation">
       <ul
@@ -52,17 +59,17 @@ const NavigationBar: React.FunctionComponent<NavigationBarProps> = () => {
           </A>
         </li>
         <li>
-          <A type="navegation" to="#experience" id="btn">
+          <A type="navegation" to="#experience" id="btnExperience">
             <SvgExperience />
           </A>
         </li>
         <li>
-          <A type="navegation" to="#services" id="btnHome">
+          <A type="navegation" to="#services" id="btnServices">
             <SvgHeart />
           </A>
         </li>
         <li>
-          <A type="navegation" to="#contact" id="btnHome">
+          <A type="navegation" to="#contact" id="btnContact">
             <SvgContact />
           </A>
         </li>
