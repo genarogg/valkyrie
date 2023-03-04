@@ -6,11 +6,22 @@ import SvgLinkedin from "../svg-img/social/SvgLinkedin"
 import SvgGithub from "../svg-img/social/SvgGithub"
 import SvgInstagram from "../svg-img/social/SvgInstagram"
 import SvgWhatsapp from "../svg-img/social/SvgWhatsapp"
+import A from "../nano/A"
+import { apiWhatsapp, github, instagram, linkedin } from "./Varibles"
 
 interface PresentationProps {}
 
 const Presentation: React.FunctionComponent<PresentationProps> = () => {
-  console.log()
+  const li = (url: string, children: any, tooltip: string) => {
+    return (
+      <li className=" hint--right hint--bounce hint--info" aria-label={tooltip}>
+        <A type="a" to={url}>
+          {children}
+        </A>
+      </li>
+    )
+  }
+
   return (
     <>
       <div className="presentation">
@@ -32,12 +43,14 @@ const Presentation: React.FunctionComponent<PresentationProps> = () => {
         </div>
 
         <div className="row ">
-          <div className="col-md-1 header-socials">
-            <SvgLinkedin />
-            <SvgGithub />
-            <SvgInstagram />
-            <SvgWhatsapp />
-          </div>
+          <nav className="col-md-1 header-socials">
+            <ul>
+              {li(linkedin, <SvgLinkedin />, "Linkedin")}
+              {li(github, <SvgGithub />, "Github")}
+              {li(instagram, <SvgInstagram />, "Instagram")}
+              {li(apiWhatsapp, <SvgWhatsapp />, "Whatsapp")}
+            </ul>
+          </nav>
           <div className="col-md-10 picture">
             <div className="me">
               <Img src={Qimg().avatar.sharp} alt="myself pic" />

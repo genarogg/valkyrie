@@ -83,15 +83,16 @@ main {
       position: relative;
     }
     .header-socials {
-      /* align-items: flex-end; */
-    /* bottom: 3rem; */
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    /* left: 0; */
-    /* position: absolute; */
-    justify-content: end;
-    margin-bottom: 60px;
+      display: flex;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        justify-content: end;
+        margin-bottom: 60px;
+      }
+
       svg {
         fill: $blue-freya;
       }
