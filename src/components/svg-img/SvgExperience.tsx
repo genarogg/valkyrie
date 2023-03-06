@@ -17,8 +17,8 @@ const SvgExperience: React.FunctionComponent<SvgExperienceProps> = ({
     <div className="ico-svg">
       <svg
         className={`${css}`}
-        stroke="currentColor"
         fill={`${color}`}
+        stroke="currentColor"
         strokeWidth="0"
         viewBox="0 0 24 24"
         height={`${size}px`}

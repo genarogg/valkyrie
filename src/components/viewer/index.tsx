@@ -6,7 +6,8 @@ import Presentation from "./Presentation"
 import Experience from "./Experience"
 import Contact from "./Contact"
 import Testimonials from "./Testimonials"
-
+import Services from "./Services"
+import Work from "./Work"
 interface HomeProps {}
 
 const Home: React.FunctionComponent<HomeProps> = () => {
@@ -15,7 +16,8 @@ const Home: React.FunctionComponent<HomeProps> = () => {
       <Presentation />
       <AboutMe />
       <Experience />
-
+      <Services />
+      <Work />
       <Testimonials />
       <Contact />
     </Layout>

@@ -44,8 +44,8 @@ const Testimonials: React.FunctionComponent<TestimonialsProps> = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           /*  scrollbar={{ draggable: true }} */
-          onSwiper={swiper => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+          onSwiper={swiper => {}}
+          onSlideChange={() => {}}
         >
           {testimonial(
             Qimg().client1,

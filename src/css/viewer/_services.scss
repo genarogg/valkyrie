@@ -1,0 +1,55 @@
+.services-container {
+  margin-top: 8rem;
+}
+
+.services {
+  grid-gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  .service {
+    background: #2c2c6c;
+    border: 1px solid #4db5ff;
+    border-radius: 0 0 2rem 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    transition: var(--transition);
+    max-width: 330px;
+  }
+
+  .head {
+    background: #4db5ff;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgb(0 0 0 / 10%);
+    padding: 2rem;
+
+    h3 {
+      color: #1f1f38;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+  ul.list {
+    padding: 2rem;
+
+    li {
+      list-style: none;
+      display: flex;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+
+      svg {
+        fill: $blue-freya;
+      }
+
+      p{
+        font-size: .9rem;
+      }
+    }
+  }
+}
