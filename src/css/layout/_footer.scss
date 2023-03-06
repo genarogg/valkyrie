@@ -1,8 +1,63 @@
 .footer {
   align-self: flex-end;
-  background: #000011;
+  background: $blue-freya;
   width: 100%;
- 
+
   color: #fff;
   text-align: center;
+
+  font-size: 0.9rem;
+  margin-top: 7rem;
+  padding: 3rem 0;
+  text-align: center;
+
+  a {
+    color: #1f1f38;
+    text-decoration: none;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  nav {
+    ul {
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 0 auto 3rem;
+      display: flex;
+      justify-content: center;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+
+  .socials {
+    gap: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+
+    a{
+      background: #1f1f38;
+      border: 1px solid transparent;
+      border-radius: 0.7rem;
+      color: #fff;
+      display: flex;
+      padding: 0.8rem;
+    }
+  }
+
+  .copyright {
+    margin-bottom: 4rem;
+
+    small {
+      color: #1f1f38;
+    }
+  }
 }

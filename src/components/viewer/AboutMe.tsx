@@ -9,10 +9,10 @@ import SvgProjects from "../svg-img/SvgProjects"
 interface AboutMeProps {}
 
 const AboutMe: React.FunctionComponent<AboutMeProps> = () => {
-  console.log(Qimg().avatar.sharp)
+
   return (
     <>
-      <section className="about-me">
+      <section className="about-me" id="about">
         <h5>Get To Know</h5>
         <h2>About Me</h2>
         <div className="about-container row">

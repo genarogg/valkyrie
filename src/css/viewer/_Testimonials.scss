@@ -1,0 +1,51 @@
+.slider-container {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+  h2,
+  h5 {
+    width: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+}
+
+.testimonial {
+  background: #2c2c6c;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 230px;
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .client__avatar {
+    aspect-ratio: 1/1;
+    border: 0.4rem solid #4db5ff66;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    width: 4rem;
+  }
+
+  .client__review {
+    color: #ffffff99;
+    display: block;
+    font-weight: 300;
+    margin: 0.8rem auto 0;
+    width: 80%;
+  }
+}

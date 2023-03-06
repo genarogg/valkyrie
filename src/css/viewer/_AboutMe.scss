@@ -1,6 +1,6 @@
 .about-me {
   margin-top: 8rem;
-  height: 100vh;
+  /* height: 100vh; */
   width: 75%;
 
   h5 {
@@ -56,6 +56,7 @@
         padding: 2rem;
         text-align: center;
         border: 1px solid transparent;
+        width: 180px;
 
         &:hover {
           background: transparent;

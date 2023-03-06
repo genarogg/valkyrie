@@ -18,7 +18,9 @@
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "swiper": "^9.1.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "babel-plugin-transform-remove-console": "^6.9.4",
@@ -30,18 +32,15 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-
     "demo": "cls & gatsby build && gatsby serve",
     "develop": "cls && gatsby clean && gatsby develop",
     "deploy": "gatsby build && firebase deploy"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/genarogg/valkyrie"
